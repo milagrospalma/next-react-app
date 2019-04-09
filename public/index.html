@@ -2,13 +2,33 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <title>React App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Test React</title>
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      var config = {
+				autoOpen: true,
+				width: 375,
+				height: 375,
+				skinSmoothStrength: 1
+			};
+			var s, x;
+      setTimeout( function() {
+        ( function( d, k ) {
+          s = d.createElement( 'script' );
+          s.type = 'text/javascript';
+          s.async = true;
+          s.src = 'https://plugins-media.perfectcorp.com/c6193/sdk.js?apiKey=' + k;
+          x = d.getElementsByTagName( 'script' )[0];
+          x.parentNode.insertBefore( s, x );
+        }( document, 'pCarQ6AhFds3CdTOGCp3DQ==' ) );
+
+        window.ymkAsyncInit = function() {
+          window.YMK.init( config );
+        };
+      }, 3000 );
+    </script>
   </body>
 </html>

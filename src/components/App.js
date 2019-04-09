@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
-import './_app.scss';
+import React, { Component } from 'react'
+import Makeup from './makeup/Makeup'
+import './_app.scss'
 
 class App extends Component {
   render() {
@@ -7,18 +8,8 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <h4>Hey!</h4>
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
         </header>
+        <Makeup />
       </div>
     );
   }
