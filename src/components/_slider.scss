@@ -1,0 +1,24 @@
+h3 {
+    background: #5f9ea0;
+    color: #fff;
+    font-size: 36px;
+    line-height: 100px;
+    margin: 10px;
+    padding: 2%;
+    position: relative;
+    text-align: center;
+}
+.slick-container {
+    width: 80%;
+    margin: 0 auto;
+}
+.slick-prev {
+    &:before {
+        color: black;
+    }
+}
+.slick-next {
+    &:before {
+        color: black;
+    }
+}
