@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* Counter */
+.counter {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 3rem auto;
+  width: 50%; }
+  .counter .count {
+    font-size: 2rem; }
+  .counter .buttons {
+    max-width: 20rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem; }
+    .counter .buttons a {
+      background-color: gray;
+      border: 2px solid black;
+      border-radius: 5px;
+      color: white;
+      display: inline-block;
+      font-size: 1rem;
+      font-weight: 700;
+      margin: .5rem;
+      text-align: center;
+      text-decoration: none;
+      width: 3rem;
+      padding: .5rem; }
+
+
+/*# sourceMappingURL=styles.chunk.css.map*/

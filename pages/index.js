@@ -1,7 +1,11 @@
-const Index = () => (
-	<div>
-		<p>Hello Next.js</p>
-	</div>
-)
+import React from 'react';
+import Counter from './counter';
+import './styles.scss'
 
-export default Index
+const App = () => (
+	<div>
+		<Counter />
+	</div>
+);
+
+export default App;
