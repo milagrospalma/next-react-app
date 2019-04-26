@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import './styles.scss';
 
-class Home extends Component {
+class Main extends Component {
 	render() {
 		return (
-			<div>
-				<h1>Hello from Home</h1>
-			</div>
+			<main>
+				<h1>Main</h1>
+			</main>
 		)
 	}
 }
 
-export default Home;
+export default Main;

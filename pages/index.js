@@ -1,10 +1,14 @@
 import React from 'react';
-import Counter from './counter';
-import './styles.scss'
+import Header from './header';
+import Main from './main';
+import Footer from './footer';
+import './styles.scss';
 
 const App = () => (
 	<div>
-		<Counter />
+		<Header />
+		<Main />
+		<Footer />
 	</div>
 );
 
