@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-class Counter extends React.Component {
+class Counter extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -20,8 +20,10 @@ class Counter extends React.Component {
 	downCount = (e) => {
 		e.preventDefault();
 		this.setState(function (prevState) {
-			return {
-				count: prevState.count - 1
+			if ( prevState.count >= 1 ) {
+				return {
+					count: prevState.count - 1
+				}
 			}
 		})
 	};

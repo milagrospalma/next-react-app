@@ -430,8 +430,8 @@ var _jsxFileName = "C:\\Users\\MIN\\Desktop\\next-react\\VirtualMakeUp\\pages\\c
 
 var Counter =
 /*#__PURE__*/
-function (_React$Component) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__["default"])(Counter, _React$Component);
+function (_Component) {
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__["default"])(Counter, _Component);
 
   function Counter(props) {
     var _this;
@@ -454,9 +454,11 @@ function (_React$Component) {
       e.preventDefault();
 
       _this.setState(function (prevState) {
-        return {
-          count: prevState.count - 1
-        };
+        if (prevState.count >= 1) {
+          return {
+            count: prevState.count - 1
+          };
+        }
       });
     });
 
@@ -481,21 +483,21 @@ function (_React$Component) {
         className: "counter",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 39
+          lineNumber: 41
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "count",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 40
+          lineNumber: 42
         },
         __self: this
       }, this.state.count), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "buttons",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 41
+          lineNumber: 43
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
@@ -504,7 +506,7 @@ function (_React$Component) {
         className: "up",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 42
+          lineNumber: 44
         },
         __self: this
       }, "+"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
@@ -513,7 +515,7 @@ function (_React$Component) {
         className: "down",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 43
+          lineNumber: 45
         },
         __self: this
       }, "-"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
@@ -522,7 +524,7 @@ function (_React$Component) {
         className: "reset",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 44
+          lineNumber: 46
         },
         __self: this
       }, "C")));
@@ -530,7 +532,7 @@ function (_React$Component) {
   }]);
 
   return Counter;
-}(react__WEBPACK_IMPORTED_MODULE_7___default.a.Component);
+}(react__WEBPACK_IMPORTED_MODULE_7__["Component"]);
 
 /* harmony default export */ __webpack_exports__["default"] = (Counter);
 
