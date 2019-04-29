@@ -1,0 +1,139 @@
+// Mixin media all
+
+// Up screems bootstrap 4
+// sm: 576px,
+// md: 768px,
+// lg: 1042px,
+// xl: 1290px
+
+$mq-xs: 576px;
+$mq-sm: 768px;
+$mq-md: 1042px;
+$mq-lg: 1290px;
+
+// Down
+// -----------------------------------------
+@mixin maxw($breakpoint) {
+
+  @if $breakpoint == xs {
+		@media (max-width: "#{$mq-xs - 1}") {
+			@content;
+		}
+	}
+  @else if $breakpoint == sm {
+    @media (max-width: "#{$mq-sm - 1}") {
+      @content;
+    }
+  }
+  @else if $breakpoint == md {
+    @media (max-width: "#{$mq-md - 1}") {
+      @content;
+    }
+  }
+  @else if $breakpoint == lg {
+    @media (max-width: "#{$mq-lg - 1}") {
+      @content;
+    }
+  }
+  @else {
+    @media (max-width: "#{$breakpoint}") {
+      @content;
+    }
+  }
+}
+
+// Up
+// -----------------------------------------
+@mixin minw($breakpoint) {
+
+  @if $breakpoint == xs {
+    @media (min-width: "#{$mq-xs}") {
+      @content;
+    }
+  }
+  @else if $breakpoint == sm {
+    @media (min-width: "#{$mq-sm}") {
+      @content;
+    }
+  }
+  @else if $breakpoint == md {
+    @media (min-width: "#{$mq-md}") {
+      @content;
+    }
+  }
+  @else if $breakpoint == lg {
+    @media (min-width: "#{$mq-lg}") {
+      @content;
+    }
+  }
+  @else {
+    @media (min-width: "#{$breakpoint}") {
+      @content;
+    }
+  }
+}
+
+//NEW MEDIA QUERIES NO BOOTSTRAP
+
+// mb = 400px
+// mbl = 740px
+//tb = 768px
+//tbl = 1024px
+//desk = 1200px
+//desklg = 1600px
+
+//  1 EM = 16PX //
+
+@mixin minw($point) {
+  @if $point == desklg{
+      @media (min-width: 100em){@content;}
+  }
+  @else if $point == desk{
+      @media (min-width: 75em) { @content ; }
+  }
+  @else if $point == tbl {
+      @media (min-width: 64em) { @content ; }
+  }
+  @else if $point == tb {
+      @media (min-width: 48em) { @content ; }
+  }
+  @else if $point == tbm {
+      @media (min-width: 40em) { @content ; }
+  }
+  @else if $point == mb{
+      @media (min-width: 30em) { @content ; }
+  }
+  @else if $point == mbland {
+      @media (min-width: 20em) and (orientation: landscape){ @content ; }
+  }
+}
+@mixin maxw($point){
+  @if $point == desklg{
+      @media (max-width: 100em){@content;}
+  }
+  @else if $point == desk{
+      @media (max-width: 75em) { @content ; }
+  }
+  @else if $point == tbl {
+      @media (max-width: 64em) { @content ; }
+  }
+  @else if $point == tb {
+      @media (max-width: 48em) { @content ; }
+  }
+  @else if $point == tbm {
+      @media (max-width: 40em) { @content ; }
+  }
+  @else if $point == mb{
+    @media (max-width: 30em) { @content ; }
+  }
+  @else if $point == mbland{
+      @media (max-width: 20em){ @content ; }
+  }
+}
+
+@mixin minwc($custom){
+  @media (min-width: $custom) { @content ; }
+}
+@mixin maxwc($custom){
+  @media (max-width: $custom) { @content ; }
+}

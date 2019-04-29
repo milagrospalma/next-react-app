@@ -1,0 +1,36 @@
+// ==== CONFIGURATION ==== //
+
+//container sizes can be edit
+$cnt-tb:750px;
+$cnt-tbl:90%;
+$cnt-desk:1150px;
+
+// Images path use css
+// ------------------------------------------------
+$imgs: '../img/cssimgs/';
+
+// Define colors
+// ------------------------------------------------
+$brand-primary: #000;
+$brand-second: #999;
+$brand-third: #fff;
+$brand-fourth: #707070;
+$red-primary: #d32222;
+$red-second: #931b1b;
+$red-active: #e71c37;
+
+// Fonts
+// ------------------------------------------------
+$font-path: '../fonts/';
+
+$ff-roboto: 'Roboto', sans-serif;
+
+// Fonts loader Theme Esika
+// ------------------------------------------------
+$font-Graphik-Semibold: 'Graphik-Semibold', sans-serif;
+$font-Graphik-Regular: 'Graphik-Regular', sans-serif;
+$font-Graphik-Medium: 'Graphik-Medium', sans-serif;
+$font-Graphik-Light: 'Graphik-Light', sans-serif;
+$font-Graphik-Extralight: 'Graphik-Extralight', sans-serif;
+$font-Graphik-Bold: 'Graphik-Bold', sans-serif;
+$font-Graphik-Black: 'Graphik-Black', sans-serif;

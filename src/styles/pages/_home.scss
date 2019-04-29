@@ -1,0 +1,196 @@
+#app-virtualmk {
+	position: relative;
+	.loading-makeup {
+		@include flexvalue(column, center, center);
+		background-color: $brand-third;
+		width: 377px;
+		height: 376px;
+		position: absolute;
+		z-index: 9;
+		@include maxw(tbl) {
+			width: 100vw;
+			height: 100%;
+			margin-left: -15px;
+		}
+		.progress-bar-makeup {
+			width: 65%;
+			margin-top: 20px;
+		}
+		.bar {
+			background-color: #dadada;
+			border-radius: 5px;
+			color: $brand-primary;
+		}
+		.progress {
+			height: 3px;
+			width: 0;
+			color: $brand-third;
+			background-color: $red-active;
+			border-radius: 5px;			
+		}
+		.counter {
+			color: $brand-primary;
+			font-family: $font-Graphik-Bold;
+			font-size: 14px;
+			line-height: 24px;
+			text-align: center;
+		}
+	}
+	.alt-container {
+		.order-desktop {
+			@include minw(tbl) {
+				order: 2;
+			}
+		}
+		.mbdesk-8 {
+			@include minw(tbl) {
+				margin-bottom: 8rem;
+			}
+		}
+		.mbdesk-4 {
+			@include minw(tbl) {
+				margin-bottom: 4rem;
+			}
+		}
+	}
+	.simulator-text {
+		color: $brand-fourth;
+		font-family: $font-Graphik-Medium;
+        font-size: 11px;
+		letter-spacing: 0.2px;
+		&.desktop {
+			padding: .8rem 4rem;
+			@include maxw(tbl) {
+				display: none;
+			}
+		}
+		&.mobile {
+			display: none;
+			padding: 10px 0;
+			@include maxw(tbl) {
+				display: block;
+			}
+		}
+	}
+	.container-module {
+		background-color: rgba(255, 255, 255, 0.8);
+		margin: 0 2rem;
+		margin-top: 1.8rem;
+		padding: 12px;
+		position: relative;
+		z-index: 1;
+		height: 400px;
+		@include maxw(tbl) {
+			margin: 0;
+			padding: 0;
+		}
+		.YMK-module {
+			display: flex !important;
+			justify-content: center;
+			width: 100%;
+			@include maxw(tbl) {
+				margin-top: -4px;
+				> div {
+					margin: auto;
+				}
+			}
+			> div {
+				width: 100%;
+				> div {
+					width: 100%;
+				}
+			}
+		}
+	}
+	.bg-simulator {
+		display: none;
+		@include minw(tbl) {
+			display: block;
+			position: absolute;
+			top: 210px;
+			left: 180px;
+		}
+	}
+    .initial-content {
+		margin-top: 2.8rem;
+		@include maxw(tbl) {
+			margin-top: 0;
+		}
+		.virtualmk-title {
+			color: $brand-primary;
+			padding: 5px 0 4px;
+			display: block;
+			@include maxw(tbl) {
+				display: none;
+			}
+			> h1 {
+				font-family: $font-Graphik-Light;
+				font-size: 46px;
+				> span {
+					font-family: $font-Graphik-Bold;
+				}
+			}
+		}
+	}
+	.sliders-container {
+		display: block;
+		@include minw(tbl) {
+			@include flex-column;
+		}
+		.virtualmk-intro {
+			order: 2;
+
+			@include maxw(tbl) {
+				display: none;
+			}
+
+			.intro-text {
+				color: $brand-primary;
+				font-family: $font-Graphik-Light;
+				font-size: 14px;
+				line-height: 24px;
+			}
+
+			.text-init {
+				display: block;
+			}
+
+			.instruction-container {
+				border-left: 1px solid $brand-primary;
+				margin-top: 25px;
+				margin-bottom: 28px;
+				padding: 5px 12px;
+			}
+
+			.instructions-title {
+				@extend .intro-text;
+			}
+
+			.instructions-list {
+				margin: 0;
+			}
+
+			.step {
+				@extend .intro-text;
+				list-style: decimal;
+				list-style-position: inside;
+			}
+
+			.bold-phrase {
+				@extend .intro-text;
+				font-family: $font-Graphik-Bold;
+			}
+
+			.start-color {
+				color: $brand-primary;
+				font-family: $font-Graphik-Light;
+				font-size: 28px;
+				line-height: 24px;
+				margin-bottom: 2rem;
+			}
+		}
+		.mt-minus-8 {
+			margin-top: -8px;
+		}
+	}
+}
